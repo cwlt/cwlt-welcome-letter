@@ -1,0 +1,39 @@
+%\title{CWLT Letter}
+%
+% See http://texblog.org/2013/11/11/latexs-alternative-letter-class-newlfm/
+% and http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
+% for more information.
+%
+\documentclass[12pt,stdletter,orderfromtodate,sigleft]{newlfm}
+\usepackage{blindtext, xfrac}
+ 
+\newlfmP{dateskipbefore=0pt}
+\newlfmP{sigsize=0pt}
+\newlfmP{sigskipbefore=0pt}
+ 
+\newlfmP{Headlinewd=0pt,Footlinewd=0pt}
+ 
+\namefrom{Matthew}
+\addrfrom{%
+    Matthew Moreno\\
+    \texttt{matthew.andres.moreno@gmail.com}
+}
+  
+\addrto{%
+    Math Tutors\\
+    CWLT\\
+}
+ 
+\dateset{\today}
+ 
+\greetto{Hi,}
+ 
+\closeline{Best,}
+ 
+\begin{document}
+\begin{newlfm}
+
+\input{tex/content.tex}
+
+\end{newlfm}
+\end{document}
